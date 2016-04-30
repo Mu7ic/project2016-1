@@ -1,0 +1,30 @@
+@media only screen and (max-width:1241px) {
+    .footer-box1 {
+        height: 100%;
+        padding-left: 50px;
+    }
+}
+@media only screen and (max-width:991px) {
+    .istruction-content {
+        display: inline-block;
+        max-width: 300px;
+        padding-bottom: 5px;
+    }
+    .instruction-box2 {
+        padding-bottom: 50px;
+    }
+}
+@media only screen and (max-width:768px) {
+    .add-company a {
+        margin-left: 25px;
+    }
+    .now-search-button1, .now-search-button2 {
+        display: block;
+        float: none;  
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .now-search-button span {
+        margin: 20px;
+    }
+}
