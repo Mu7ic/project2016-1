@@ -1,0 +1,253 @@
+.profile-main-container {
+  width: 1174px;
+  padding: 0px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px; }
+
+.profile-block {
+  display: inline-block;
+  float: left;
+  background: #f4f4f4; }
+  .profile-block .helper-container {
+    position: relative;
+    width: 100%;
+    text-align: right;
+    margin-bottom: -30px;
+    overflow: hidden; }
+    .profile-block .helper-container .helper-text {
+      display: none;
+      visibility: hidden; }
+      .profile-block .helper-container .helper-text:after {
+        content: "";
+        display: block;
+        position: relative;
+        width: 0;
+        height: 0px;
+        border-right: 0px solid transparent;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-left: 13px solid #848484;
+        right: -16px;
+        top: 1px;
+        float: right; }
+    .profile-block .helper-container .helper {
+      margin: 10px 15px 0px 0px;
+      color: #848484;
+      color: #848484; }
+      .profile-block .helper-container .helper:hover {
+        color: #353535; }
+        .profile-block .helper-container .helper:hover ~ .helper-text {
+          position: fixed;
+          visibility: visible;
+          display: inline-block;
+          width: 250px;
+          background: #848484;
+          color: white;
+          min-height: 15px;
+          border-radius: 5px;
+          text-align: left;
+          padding: 5px;
+          text-indent: 5px;
+          margin: 6px 0px 0px -290px; }
+
+.company-descr {
+  height: 210px;
+  width: 770px;
+  border: 0px; }
+  .company-descr .company-logo {
+    float: left;
+    height: 100%;
+    line-height: 210px;
+    width: 266px;
+    text-align: center; }
+    .company-descr .company-logo:hover .company-logo-overlay {
+      visibility: visible; }
+    .company-descr .company-logo .company-logo-overlay {
+      visibility: hidden;
+      text-align: center;
+      line-height: normal;
+      font-size: 10pt;
+      border: 2px dashed #353535;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 5px;
+      margin: 20px;
+      width: 226px;
+      height: 170px;
+      position: absolute; }
+    .company-descr .company-logo img {
+      display: inline-block;
+      vertical-align: middle; }
+  .company-descr .company-text {
+    float: left;
+    width: 430px;
+    height: 100%;
+    padding-left: 15px;
+    margin-left: 15px; }
+    .company-descr .company-text:hover .company-text-overlay {
+      visibility: visible; }
+    .company-descr .company-text .company-text-overlay {
+      visibility: hidden;
+      text-align: center;
+      line-height: normal;
+      font-size: 10pt;
+      border: 2px dashed #353535;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 5px;
+      margin: 20px;
+      width: 430px;
+      height: 170px;
+      margin-left: -15px;
+      position: absolute; }
+    .company-descr .company-text h2 {
+      margin-top: 30px;
+      font-size: 40pt;
+      font-family: "Conv_eurof55", sans-serif; }
+    .company-descr .company-text p {
+      font-size: 13pt;
+      font-family: "Conv_Roboto-Light", sans-serif;
+      font-weight: 600;
+      color: #848484; }
+
+.switch {
+  width: 50px;
+  border: 2px solid grey;
+  height: 20px;
+  border-radius: 10px;
+  padding: 1px;
+  transition: .3s all ease; }
+  .switch .switch-pip {
+    transition: .3s all ease;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    left: 30px;
+    border: 0px;
+    background: grey;
+    border-radius: 10px; }
+  .switch.success {
+    border: 2px solid #00846b;
+    background: #00846b; }
+    .switch.success .switch-pip {
+      left: 0px;
+      background: white; }
+
+.prog-bar-container {
+  background: white;
+  width: 100px;
+  height: 8px;
+  overflow: hidden;
+  border-radius: 10px; }
+  .prog-bar-container .prog-bar {
+    max-width: 100%;
+    min-width: 0%;
+    background: #00846b;
+    width: 56%;
+    height: 8px;
+    border-radius: 10px; }
+
+.menu-list {
+  list-style: none;
+  padding: 20px 15px 20px 15px; }
+  .menu-list li a {
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    color: #353535;
+    font-weight: bold;
+    border: 1px solid #f4f4f4;
+    border-radius: 5px;
+    padding: 10px 0px; }
+    .menu-list li a:hover, .menu-list li a.active {
+      border: 1px solid #3878c7;
+      color: #848484; }
+      .menu-list li a:hover span, .menu-list li a.active span {
+        color: red; }
+        .menu-list li a:hover span path, .menu-list li a.active span path {
+          fill: red; }
+  .menu-list li span {
+    display: inline-block; }
+    .menu-list li span svg {
+      vertical-align: middle;
+      margin: 10px; }
+
+.profile-info {
+  border: 0px;
+  height: auto;
+  width: 370px;
+  margin-left: 30px; }
+  .profile-info table {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    border: 0px; }
+    .profile-info table tr {
+      height: calc((210px - 60px) / 4); }
+      .profile-info table tr td {
+        border: 0px;
+        padding-right: 10px;
+        padding-left: 10px; }
+        .profile-info table tr td .bold {
+          font-weight: bold;
+          text-shadow: 0px 0px 0px black; }
+        .profile-info table tr td:nth-child(1) {
+          width: 230px;
+          color: black;
+          text-align: right; }
+
+.profile-body-container {
+  display: inline-block;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  width: auto;
+  height: 800px; }
+  .profile-body-container .profile-menu {
+    height: 100%;
+    width: 270px; }
+  .profile-body-container .profile-content {
+    margin-left: 30px;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 30px;
+    width: 870px; }
+  .profile-body-container .breadcrumbs {
+    display: inline-block;
+    width: calc(100% - 40px);
+    margin: 20px 20px;
+    font-size: 12pt;
+    font-family: "Conv_Roboto-Light", sans-serif;
+    font-weight: bold;
+    color: #353535; }
+    .profile-body-container .breadcrumbs .section-name {
+      color: #848484; }
+
+.contact-block {
+  display: inline-block;
+  overflow: hidden;
+  width: 370px;
+  height: 300px;
+  border: 1px solid #3878c7;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0px -2px 20px -3px #848484; }
+  .contact-block .contact-block-header {
+    background: #3878c7;
+    font-family: "Conv_eurof55", sans-serif;
+    font-size: 16pt;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    text-indent: 20px; }
+    .contact-block .contact-block-header .enlarge {
+      width: 20px;
+      height: 20px;
+      margin: 10px;
+      cursor: pointer;
+      float: right;
+      background: url(../images/enlarge.png); }
+  .contact-block .contact-block-content {
+    background: white;
+    height: calc(100% - 45px); }

@@ -1,0 +1,67 @@
+<h2 class='white-headline'>Обслуживаемые марки автомобилей <sup>({{countChecked(markBlocks)}}/{{countTotal(markBlocks)}})</sup> </h2>
+
+<ul>
+  <li>
+    <md-checkbox ng-model='markBlocks.checked' ng-click='checkBlocks(markBlocks)'>выбрать всё</md-checkbox>
+  </li>
+  <li ng-repeat='block in markBlocks'>
+    <label></label>
+    <div class='check-list' ng-click='block.show = !block.show'>
+      <h3>
+        {{block.name}} ({{getChecked(block)}}/{{block.items.length}})
+      </h3>
+      <div class='list' ng-show='block.show' ng-click='prevent($event)'>
+        <md-checkbox ng-click='checkAll(block)' ng-model='block.checked'>выбрать всё</md-checkbox>
+        <ul>
+          <li ng-repeat='item in block.items'>
+            <md-checkbox ng-model='item.status'>{{item.name}}</md-checkbox>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<h2 class='white-headline'> Выполняемые работы <sup>({{countChecked(workBlocks)}}/{{countTotal(workBlocks)}})</sup> </h2>
+
+<ul>
+  <li>
+    <md-checkbox ng-model='workBlocks.checked' ng-click='checkBlocks(workBlocks)'>выбрать всё</md-checkbox>
+  </li>
+  <li ng-repeat='block in workBlocks'>
+    <label></label>
+    <div class='check-list' ng-click='block.show = !block.show'>
+      <h3>
+        {{block.name}} ({{getChecked(block)}}/{{block.items.length}})
+      </h3>
+      <div class='list' ng-show='block.show' ng-click='prevent($event)'>
+        <md-checkbox ng-click='checkAll(block)' ng-model='block.checked'>выбрать всё</md-checkbox>
+        <ul>
+          <li ng-repeat='item in block.items'>
+            <md-checkbox ng-model='item.status'>{{item.name}}</md-checkbox>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<h2 class='white-headline'> Выполняемые работы <sup>({{getChecked(other)}}/{{other.items.length}})</sup> </h2>
+
+<ul>
+  <li>
+    <label></label>
+    <div class='check-list'>
+      <div class='list'>
+        <md-checkbox class='head-checkbox' ng-click='checkAll(other)' ng-model='other.checked'>выбрать всё</md-checkbox>
+        <ul class='wide'>
+          <li ng-repeat='item in other.items'>
+            <md-checkbox ng-model='item.status'>{{item.name}}</md-checkbox>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </li>
+</ul>
+<h2 class='white-headline'></h2>
+<button class="standard-button">Сохранить</button>

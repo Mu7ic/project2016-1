@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="" ng-app='BiBiApp'>
+<html lang="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,9 @@
     <link rel="stylesheet" href="css/bootstrap-skin.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bundle.css">
+    <link rel="stylesheet" href="css/reg.css">
     <link rel="stylesheet" href="css/media-queries.css">
-    <link rel="stylesheet" href="css/angular-material.min.css">
     <script type='text/javascript' src='js/select.js'></script>
-    <script type='text/javascript' src='js/angular.min.js'></script>
-    <script type='text/javascript' src='js/angular-route.min.js'></script>
-    <script type='text/javascript' src='js/angular-animate.min.js'></script>
-    <script type='text/javascript' src="js/angular-aria.min.js"></script>
-    <script type='text/javascript' src="js/angular-messages.min.js"></script>
-    <script type='text/javascript' src="js/angular-material.min.js"></script>
-    <script type='text/javascript' src='js/all.min.js'></script>
 
     <!--[if IE]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -29,14 +21,15 @@
     <![endif]-->
 </head>
 
-<body ng-controller='RootCtrl'>
+<body>
+
     <div class="container-fluid">
         <header class="header container">
            <div class="logotype clearfix">
-                <div class="col-md-4 col-sm-12 logo">
-                    <a href="#/main"><img src="images/logo.jpg" alt="lotogip"></a>
+                <div class="col-md-6 col-sm-12 logo">
+                    <a href=""><img src="images/logo.jpg" alt="lotogip"></a>
                 </div>
-                <div class="col-md-8 col-sm-12 logo-2">
+                <div class="col-md-6 col-sm-12 logo-2">
                     <div class="col-md-4 col-sm-4 col-xs-12 info-box1">
                         <div class="add-company">
                                 <a href="">Добавить компанию</a>
@@ -65,25 +58,27 @@
                             <span class="select-cursor">&#8250;</span>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-3 col-xs-12 info-box1">
+                    <div class="col-md-4 col-sm-4 col-xs-12 info-box1">
                         <div class="personal-account">
-                            <a href="#/profile">Личный кабинет</a>
-                        </div>
-                    </div>
-                    <div class="col-md-1 col-sm-1 col-xs-12 info-box1 pull-right">
-                        <div class='personal-image'>
-                          <a href='#/me'>
-                            <img ng-src='{{user.avatar}}'/>
-                          </a>
+                                <a href="">Личный кабинет</a>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <section class="header slogan" ng-include='getHeader()'>
+            <section class="header slogan">
+                <div class="slogan-box">
+                    <h1>Заявка на <span>регистрацию СТО</span></h1>
+                </div>
+                <div class="slogan-box">
+                    <p>Укажите информацию о СТО - контактные данные. Сведения будут видны посетителям портала BiBiHelper.ru при поиске сервиса</p>
+                </div>
             </section>
         </header>
-        <main class="main" ng-view>
+
+        <main class="main">
+          <!-- основная информация -->
+          
         </main>
         <!--                                Footer - Подвал                            -->
 
@@ -115,8 +110,8 @@
                     </ul>
                     <h6 class="self-room">Личный кабинет</h6>
                     <ul>
-                       <li><a href='#/main' ng-click='openAuth()'>Вход</a></li>
-                       <li><a href="#/reg">Регистрация</a></li>
+                       <li><a href="">Вход</a></li>
+                       <li><a href="">Регистрация</a></li>
                    </ul>
                </div>
            </div>

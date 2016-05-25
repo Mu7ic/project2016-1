@@ -1,0 +1,200 @@
+[
+  {
+    "name": "Англия",
+    "checked" : false,
+    "items": [
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      }
+    ]
+  },
+  {
+    "name": "Германия",
+    "checked" : false,
+    "items": [
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      }
+    ]
+  },
+  {
+    "name": "Франция",
+    "checked" : false,
+    "items": [
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      }
+    ]
+  },
+  {
+    "name": "Чехия",
+    "checked" : false,
+    "items": [
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      }
+    ]
+  },
+  {
+    "name": "Испания",
+    "checked" : false,
+    "items": [
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      }
+    ]
+  },
+  {
+    "name": "Италия",
+    "checked" : false,
+    "items": [
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      }
+    ]
+  },
+  {
+    "name": "Китай",
+    "checked" : false,
+    "items": [
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      }
+    ]
+  },
+  {
+    "name": "Россия",
+    "checked" : false,
+    "items": [
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      }
+    ]
+  },
+  {
+    "name": "США",
+    "checked" : false,
+    "items": [
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      },
+      {
+        "name": "some",
+        "status": false
+      }
+    ]
+  }
+]

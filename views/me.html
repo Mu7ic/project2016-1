@@ -1,0 +1,118 @@
+<div class='profile-main-container' ng-init='initMe()'>
+  <div class='profile-body-container'>
+    <div class='profile-block profile-menu'>
+      <div class='user-info'>
+        <img class='profile-image' src='images/profile-photo.png'/>
+        <h2 class='user-last-name'>
+          {{user.lastName}}
+          <small>{{user.firstName+" "+user.middleName}}</small>
+        </h2>
+        <h3 class='user-phone'>{{user.phone}}</h3>
+        <a href='mailto:{{user.mail}}' class='user-mail'>{{user.mail}}</a>
+      </div>
+      <ul class='menu-list'>
+        <li ng-repeat='item in menu'>
+          <a ng-class='isActive(item.href)' ng-click='item.action()'>
+            <span ng-include='item.marker'></span>
+            {{item.name}}
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class='profile-block profile-content' >
+      <div class='breadcrumbs'>
+        Личный кабинет/<span class='section-name'>{{currentSection().name}}</span>
+      </div>
+      <div class='section-container' ng-include='getSection()'>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class='modal-overlay' ng-show='showMailChange' ng-click='showMailChange = false'>
+  <div class='modal-window email-change-window' ng-click='prevent($event)'>
+    <header class='modal-window-header'>
+      <div class='control-container'>
+        <a class="control-close" ng-click='showMailChange = false'> X </a>
+      </div>
+        <h1> Изменить email </h1>
+    </header>
+    <div class='modal-window-content'>
+      <ul>
+        <li>
+          <label>Email</label>
+          <input type='email' ng-model='user.mail'/>
+        </li>
+      </ul>
+      <button class='standard-button' ng-click='showMailChange = false'> Сохранить </button>
+    </div>
+  </div>
+</div>
+
+
+<div class='modal-overlay' ng-show='showPasswordChange' ng-click='showPasswordChange = false'>
+  <div class='modal-window password-change-window' ng-click='prevent($event)'>
+    <header class='modal-window-header'>
+      <div class='control-container'>
+        <a class="control-close" ng-click='showPasswordChange = false'> X </a>
+      </div>
+        <h1> Изменить пароль </h1>
+    </header>
+    <div class='modal-window-content'>
+      <ul>
+        <li>
+          <label>Старый пароль</label>
+          <input type='email' ng-model='passChange.oldpass'/>
+        </li>
+        <li>
+          <label>Новый пароль</label>
+          <input type='email' ng-model='passChange.newpass'/>
+        </li>
+        <li>
+          <label>Новый пароль еще раз</label>
+          <input type='email' ng-model='passChange.newpass_confirm'/>
+        </li>
+      </ul>
+      <button class='standard-button' ng-click='showPasswordChange = false'> Сохранить </button>
+    </div>
+  </div>
+</div>
+
+
+<div class='modal-overlay' ng-show='showProfileChange' ng-click='showProfileChange = false'>
+  <div class='modal-window profile-change-window' ng-click='prevent($event)'>
+    <header class='modal-window-header'>
+      <div class='control-container'>
+        <a class="control-close" ng-click='showProfileChange = false'> X </a>
+      </div>
+        <h1> Редактировать профиль </h1>
+    </header>
+    <div class='modal-window-content'>
+      <div class='image-container'>
+        <div class='overlay'>
+          <a href='#/me'>Загрузить фото</a>
+        </div>
+        <img ng-src='{{user.avatar}}'>
+      </div>
+      <ul>
+        <li>
+          <label>Фамилия</label>
+          <input type='text' ng-model='user.lastName'/>
+        </li>
+        <li>
+          <label>Имя</label>
+          <input type='text' ng-model='user.firstName'/>
+        </li>
+        <li>
+          <label>Отчество</label>
+          <input type='text' ng-model='user.middleName'/>
+        </li>
+        <li>
+          <label>Номер телефона</label>
+          <input type='text' ng-model='user.phone'/>
+        </li>
+      </ul>
+      <button class='standard-button' ng-click='showProfileChange = false'> Сохранить </button>
+    </div>
+  </div>
+</div>

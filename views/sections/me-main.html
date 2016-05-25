@@ -1,0 +1,42 @@
+  <div class='contact-block-mini' ng-repeat='point in points'>
+    <div class='contact-block-header'>
+      {{point.name}}
+    </div>
+    <div class='contact-block-content'>
+      <div class='profile-block company-descr'>
+        <div class='company-logo'>
+          <img ng-src='{{point.logo}}'>
+        </div>
+        <div class='company-text'>
+          <!-- <h2>LR-Premium </h3> -->
+          <p>{{point.desc}}</p>
+        </div>
+      </div>
+      <div class='profile-block profile-info'>
+        <table>
+          <tbody>
+            <!-- <tr>
+              <td>Дата регистрации/<span class='bold'>15.08.2016</span></td>
+              <td><img ng-src='{{regDateValid ? "images/param-ok.png" : "images/param-fail.png"}}' ng-click='regDateValid = !regDateValid'/></td>
+            </tr> -->
+            <tr>
+              <td>Профиль заполнен на <span class='bold'>56%</span></td>
+              <td><div class='prog-bar-container'><div class='prog-bar'></div></div></td>
+            </tr>
+            <tr>
+              <td>Cтатус: <span class='bold'>{{point.status ? 'Опубликован' : 'Не опубликован'}}</span></td>
+              <td><div class='switch' ng-class='{success:point.status}' ng-click='point.status = !point.status'><div class='switch-pip'></div></div></td>
+            </tr>
+            <!-- <tr>
+              <td>реквизиты/<span class='bold'>подтверждены</span></td>
+              <td><img ng-src='{{requisitesConfirmed ? "images/param-ok.png" : "images/param-fail.png"}}' ng-click='requisitesConfirmed = !requisitesConfirmed'/></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class='block-placeholder add-block' ng-click='addCompany()'>
+    <h1>+</h1>
+    <a href='#/reg'>Добавить компанию</a>
+  </div>

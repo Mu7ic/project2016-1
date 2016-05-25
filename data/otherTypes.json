@@ -1,0 +1,21 @@
+{
+  "checked" : false,
+  "items": [
+    {
+      "name": "some",
+      "status": false
+    },
+    {
+      "name": "some",
+      "status": false
+    },
+    {
+      "name": "some",
+      "status": false
+    },
+    {
+      "name": "some",
+      "status": false
+    }
+  ]
+}

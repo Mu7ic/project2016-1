@@ -1,0 +1,131 @@
+.main .reg-info-block {
+  position: relative;
+  margin: auto;
+  width: 970px; }
+  .main .reg-info-block .info-block-title {
+    font-size: 20pt;
+    font-family: "Conv_eurof55", sans-serif;
+    font-weight: 800; }
+  .main .reg-info-block .info-block-data {
+    background: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 50px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px; }
+    .main .reg-info-block .info-block-data .data-row {
+      margin-bottom: 30px; }
+      .main .reg-info-block .info-block-data .data-row:nth-child(1) {
+        margin-top: 30px; }
+      .main .reg-info-block .info-block-data .data-row label {
+        color: #353535;
+        width: 370px;
+        text-align: right;
+        font-size: 14pt;
+        font-weight: 500;
+        font-family: "Conv_Roboto-Light", sans-serif; }
+      .main .reg-info-block .info-block-data .data-row input, .main .reg-info-block .info-block-data .data-row select {
+        font-size: 14pt;
+        font-weight: 500;
+        font-family: "Conv_Roboto-Light", sans-serif;
+        text-align: center;
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 270px;
+        background: white;
+        border: 0px;
+        padding: 15px 0px 15px 0px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -o-border-radius: 4px;
+        border-radius: 4px;
+        border-bottom: 2px solid #3878c7; }
+      .main .reg-info-block .info-block-data .data-row input[type=phone] {
+        letter-spacing: 2px; }
+      .main .reg-info-block .info-block-data .data-row .input-long {
+        width: 370px; }
+    .main .reg-info-block .info-block-data .data-row-double {
+      margin-bottom: 30px; }
+      .main .reg-info-block .info-block-data .data-row-double label {
+        color: #353535;
+        text-align: right;
+        font-size: 14pt;
+        font-weight: 500;
+        font-family: "Conv_Roboto-Light", sans-serif;
+        width: 70px; }
+        .main .reg-info-block .info-block-data .data-row-double label:nth-child(1) {
+          width: 370px; }
+      .main .reg-info-block .info-block-data .data-row-double input, .main .reg-info-block .info-block-data .data-row-double select {
+        margin-left: 30px;
+        margin-right: 30px;
+        width: 70px;
+        background: white;
+        border: 0px;
+        padding: 15px 0px 15px 0px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -o-border-radius: 4px;
+        border-radius: 4px;
+        border-bottom: 2px solid #3878c7; }
+    .main .reg-info-block .info-block-data .data-row-models {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      .main .reg-info-block .info-block-data .data-row-models label {
+        color: #353535;
+        width: 370px;
+        text-align: right;
+        font-size: 14pt;
+        font-weight: 500;
+        font-family: "Conv_Roboto-Light", sans-serif; }
+      .main .reg-info-block .info-block-data .data-row-models .auto-model {
+        display: inline-block;
+        margin-left: 30px;
+        background: white;
+        border: 0px;
+        padding: 15px 7px 15px 7px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -o-border-radius: 4px;
+        border-radius: 4px;
+        border-bottom: 2px solid #3878c7;
+        width: auto; }
+        .main .reg-info-block .info-block-data .data-row-models .auto-model:last-of-type {
+          margin-right: 30px; }
+    .main .reg-info-block .info-block-data .checkbox-row {
+      margin-left: 400px;
+      margin-bottom: 30px; }
+      .main .reg-info-block .info-block-data .checkbox-row input {
+        margin-right: 30px;
+        float: left;
+        width: 20px;
+        height: 20px; }
+      .main .reg-info-block .info-block-data .checkbox-row label {
+        width: 330px;
+        color: #353535; }
+    .main .reg-info-block .info-block-data .button-row {
+      margin-bottom: 30px; }
+      .main .reg-info-block .info-block-data .button-row button {
+        margin-left: 400px; }
+    .main .reg-info-block .info-block-data .link-row {
+      margin-left: 400px;
+      width: 270px;
+      text-align: center; }
+      .main .reg-info-block .info-block-data .link-row a {
+        display: inline; }
+  .main .reg-info-block .standard-button {
+    display: inline-block;
+    width: 260px;
+    height: 44px;
+    background: #de1e29;
+    border: 1px solid #de1e29;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 23px;
+    outline: none;
+    font-family: "Conv_eurof55", sans-serif;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 2px 0 0 #B72025;
+    -moz-box-shadow: 0px 2px 0 0 #B72025;
+    -ms-box-shadow: 0px 2px 0 0 #B72025;
+    -o-box-shadow: 0px 2px 0 0 #B72025; }
